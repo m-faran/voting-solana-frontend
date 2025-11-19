@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useAnchorWallet, useConnection } from '@solana/wallet-adapter-react';
-import { Program, AnchorProvider, BN, Idl, web3 } from '@coral-xyz/anchor';
+import { Program, AnchorProvider, BN } from '@coral-xyz/anchor';
 import { PublicKey, Keypair } from '@solana/web3.js';
 import toast from 'react-hot-toast';
 
