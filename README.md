@@ -1,88 +1,16 @@
-# web3js-react-vite-tailwind-counter
+# D21 Voting DApp Frontend
 
-This is a Vite app containing:
+This is the client-side interface for the D21 Voting System, generated with `create-solana-dapp` and built using **Next.js**, **Tailwind CSS**, and **DaisyUI**. It allows users to interact with the deployed smart contract via their browser wallets.
 
-- Tailwind CSS setup for styling
-- Useful wallet UI elements setup using [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
-- A basic Greeter Solana program written in Anchor
-- UI components for interacting with the Greeter program using the Anchor generated client
+## Features
+- **Uses D21 Voting Mechanism**
+- **Wallet Integration**: Seamless connection with Phantom, Solflare, and other Solana adapters.
+- **Admin Dashboard**: Create new elections with custom candidate lists and durations.
+- **Voting Interface**: Real-time loading of election data, candidate selection, and transaction submission.
+- **Live Tallying**: Visual indicators for election status, vote counts, and winners.
 
-## Getting Started
+## How to interact
+- You need a Solana wallet like phantom, ensure its on devenet and has some devnet funds and you are ready to go.
 
-### Installation
-
-#### Download the template
-
-```shell
-pnpm create solana-dapp@latest -t gh:solana-foundation/templates/web3js/web3js-react-vite-tailwind-counter
-```
-
-#### Install Dependencies
-
-```shell
-pnpm install
-```
-
-## Apps
-
-### anchor
-
-This is a Solana program written in Rust using the Anchor framework.
-
-#### Commands
-
-You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the
-command with `pnpm`, eg: `pnpm anchor`.
-
-#### Sync the program id:
-
-Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the
-Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
-
-You will manually need to update the constant in `anchor/lib/counter-exports.ts` to match the new program id.
-
-```shell
-pnpm anchor keys sync
-```
-
-#### Build the program:
-
-```shell
-pnpm anchor-build
-```
-
-#### Start the test validator with the program deployed:
-
-```shell
-pnpm anchor-localnet
-```
-
-#### Run the tests
-
-```shell
-pnpm anchor-test
-```
-
-#### Deploy to Devnet
-
-```shell
-pnpm anchor deploy --provider.cluster devnet
-```
-
-### web
-
-This is a React app that uses the Anchor generated client to interact with the Solana program.
-
-#### Commands
-
-Start the web app
-
-```shell
-pnpm dev
-```
-
-Build the web app
-
-```shell
-pnpm build
-```
+## How it looks
+<img width="803" height="606" alt="image" src="https://github.com/user-attachments/assets/4f014f7b-e352-4d85-84a9-ee14cbba99b5" />
